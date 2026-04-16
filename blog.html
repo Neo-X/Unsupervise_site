@@ -1,0 +1,32 @@
+---
+layout: default
+title: Blog
+description: News, research updates, and insights from the Unsupervised team.
+permalink: /blog/
+---
+
+<section class="section blog-section">
+  <div class="container">
+    <div class="section-label">Blog</div>
+    <h1 class="section-title">News &amp; Insights</h1>
+    <p class="section-subtitle">Research updates, company news, and thoughts on the future of robotics and AI.</p>
+
+    <div class="blog-list">
+      {% for post in site.posts %}
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+          {% if post.categories %}<span class="tag">{{ post.categories | first }}</span>{% endif %}
+        </div>
+        <h2 class="blog-card-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        <p class="blog-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+        <a href="{{ post.url | relative_url }}" class="read-more">Read more &rarr;</a>
+      </article>
+      {% else %}
+      <p class="no-posts">No posts yet. Check back soon.</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>

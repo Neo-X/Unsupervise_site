@@ -1,0 +1,34 @@
+# Unsupervised — Company Website
+# Edit the values below to update site-wide settings
+
+title: "Unsupervised"
+tagline: "One Brain. Any Body. Infinite Tools."
+description: "AI-powered flexible automation for robotics. Seamless integration of hardware and software to solve all tasks."
+
+url: "https://unsupervisedrobotics.ai"
+baseurl: ""
+
+email: "glen.berseth@unsupervisedrobotics.ca"
+github_username: neo-x
+twitter_username: GlenBerseth
+linkedin_username: glen-berseth-0523278b
+
+# Blog / Pagination
+permalink: /blog/:year/:month/:day/:title.html
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+encoding: utf-8
+
+plugins:
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - "*.pptx"

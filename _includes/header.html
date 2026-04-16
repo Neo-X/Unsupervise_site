@@ -1,0 +1,27 @@
+<header class="site-header">
+  <div class="container">
+    <a class="site-logo" href="{{ '/' | relative_url }}">
+      <span class="logo-text">UNSUPERVISED</span>
+    </a>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="{{ '/#solution' | relative_url }}">Solution</a></li>
+        <li><a href="{{ '/#technology' | relative_url }}">Technology</a></li>
+        <li><a href="{{ '/#team' | relative_url }}">Team</a></li>
+        <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/#contact' | relative_url }}" class="btn btn-primary">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.site-nav');
+  if (toggle) toggle.addEventListener('click', () => nav.classList.toggle('open'));
+</script>
