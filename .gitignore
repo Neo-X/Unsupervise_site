@@ -24,3 +24,5 @@ deploy.sh
 
 # Sensitive / misc
 *.pptx
+
+.env
