@@ -24,7 +24,7 @@ Our focus right now is on precision assembly and inspection tasks, but our platf
 
 ## What's Next
 
-We are actively working with our first customers and partners. If you're in manufacturing and want to explore what AI-powered automation could mean for your operations, [reach out](/contact).
+We are actively working with our first customers and partners. If you're in manufacturing and want to explore what AI-powered automation could mean for your operations, [reach out](/#contact).
 
 More updates coming soon.
 

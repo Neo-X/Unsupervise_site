@@ -1,17 +1,20 @@
 # Unsupervised — Company Website
 # Edit the values below to update site-wide settings
 
-title: "Unsupervised"
+title: "Unsupervised Robotics"
 tagline: "One Brain. Any Body. Infinite Tools."
-description: "AI-powered flexible automation for robotics. Seamless integration of hardware and software to solve all tasks."
+description: "Unsupervised Robotics is building AI-powered robotics for the future — one AI platform that works across any robot hardware."
 
 url: "https://unsupervisedrobotics.ai"
 baseurl: ""
 
-email: "glen.berseth@unsupervisedrobotics.ca"
+email: "glen.berseth@unsupervisedrobotics.ai"
 github_username: neo-x
 twitter_username: GlenBerseth
 linkedin_username: glen-berseth-0523278b
+
+# Social preview image (used by jekyll-seo-tag for Open Graph / Twitter cards)
+logo: "/assets/images/og-cover.png"
 
 # Blog / Pagination
 permalink: /blog/:year/:month/:day/:title.html
@@ -23,6 +26,9 @@ encoding: utf-8
 
 plugins:
   - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
 
 paginate: 5
 paginate_path: "/blog/page:num/"
